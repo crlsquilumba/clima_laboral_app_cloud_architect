@@ -1,0 +1,29 @@
+{
+  "name": "clima-laboral-functions",
+  "version": "1.0.0",
+  "description": "Azure Functions for Clima Laboral App",
+  "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "echo 'No build step needed for JavaScript'",
+    "prestart": "npm install",
+    "start": "func start",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "axios": "^1.6.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "azure-functions",
+    "clima-laboral",
+    "ai",
+    "surveys"
+  ],
+  "author": "Clima Laboral Team",
+  "license": "MIT"
+}

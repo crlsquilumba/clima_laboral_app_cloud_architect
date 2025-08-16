@@ -1,0 +1,245 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T12:00:00.000Z" agent="5.0" etag="arch-func-001" version="22.1.16" type="device">
+  <diagram name="ARCH-FUNC-001" id="arch-func-001">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- TÍTULO -->
+        <mxCell id="title" value="ARCH-FUNC-001: High-Level Functional Architecture&#xa;Labor Climate Evaluation System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1a1a1a;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="600" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- USUARIOS -->
+        <mxCell id="usuarios" value="USUARIOS DEL SISTEMA" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#01579b;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="empleados" value="9,000 Empleados Retail" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="usuarios">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rrhh" value="Asistentes RRHH" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="usuarios">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="gerentes" value="Gerentes" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="usuarios">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="usuarios-desc" value="Usuarios del sistema" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#666666;" vertex="1" parent="usuarios">
+          <mxGeometry y="120" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- APLICACIONES -->
+        <mxCell id="aplicaciones" value="APLICACIONES CLIENTE" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#4a148c;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="app-movil" value="App Móvil React Native" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="aplicaciones">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="app-web" value="App Web React" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="aplicaciones">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sharepoint" value="SharePoint Online" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="aplicaciones">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="aplicaciones-desc" value="Interfaces de usuario" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#666666;" vertex="1" parent="aplicaciones">
+          <mxGeometry y="120" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- SERVICIOS AZURE -->
+        <mxCell id="servicios-azure" value="SERVICIOS AZURE" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#1b5e20;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="660" y="100" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="azure-functions" value="Azure Functions .NET 8" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="servicios-azure">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="azure-sql" value="Azure SQL Database" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="servicios-azure">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="azure-ai" value="Azure AI Services" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="servicios-azure">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="servicios-azure-desc" value="Servicios cloud Azure" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#666666;" vertex="1" parent="servicios-azure">
+          <mxGeometry y="120" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- FLUJOS -->
+        <mxCell id="flujos-funcionales" value="FLUJOS FUNCIONALES" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#e65100;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="970" y="100" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="encuestas" value="Encuestas Clima Laboral" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="flujos-funcionales">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ideas" value="Sistema de Ideas" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="flujos-funcionales">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notificaciones" value="Notificaciones" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="flujos-funcionales">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flujos-funcionales-desc" value="Procesos de negocio" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#666666;" vertex="1" parent="flujos-funcionales">
+          <mxGeometry y="120" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- INTEGRACIÓN SHAREPOINT -->
+        <mxCell id="integracion-sharepoint" value="INTEGRACIÓN SHAREPOINT" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e0f2f1;strokeColor=#004d40;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="data-factory" value="Azure Data Factory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="integracion-sharepoint">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sincronizacion" value="Sincronización Automática" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="integracion-sharepoint">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="transformacion" value="Transformación de Datos" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="integracion-sharepoint">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="integracion-sharepoint-desc" value="Conexión SharePoint" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#666666;" vertex="1" parent="integracion-sharepoint">
+          <mxGeometry y="120" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- SERVICIOS ADICIONALES -->
+        <mxCell id="servicios-adicionales" value="SERVICIOS ADICIONALES" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e8f5e8;strokeColor=#1b5e20;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="azure-communication" value="Azure Communication" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="servicios-adicionales">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="azure-monitor" value="Azure Monitor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="servicios-adicionales">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="azure-keyvault" value="Azure Key Vault" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="servicios-adicionales">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="servicios-adicionales-desc" value="Servicios de soporte" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;fontColor=#666666;" vertex="1" parent="servicios-adicionales">
+          <mxGeometry y="120" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- LEYENDA -->
+        <mxCell id="leyenda" value="LEYENDA" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="300" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leyenda-users" value="Users - Usuarios" style="text;strokeColor=none;fillColor=#e1f5fe;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="leyenda">
+          <mxGeometry y="30" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leyenda-apps" value="Client Applications" style="text;strokeColor=none;fillColor=#f3e5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="leyenda">
+          <mxGeometry y="50" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leyenda-azure" value="Azure Services" style="text;strokeColor=none;fillColor=#e8f5e8;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="leyenda">
+          <mxGeometry y="70" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leyenda-flows" value="Functional Flows" style="text;strokeColor=none;fillColor=#fff3e0;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="leyenda">
+          <mxGeometry y="90" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="leyenda-sharepoint" value="SharePoint Integration" style="text;strokeColor=none;fillColor=#e0f2f1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=10;" vertex="1" parent="leyenda">
+          <mxGeometry y="110" width="250" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- CONEXIONES -->
+        <mxCell id="edge1" edge="1" parent="1" source="empleados" target="app-movil">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge2" edge="1" parent="1" source="empleados" target="app-web">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge3" edge="1" parent="1" source="rrhh" target="app-web">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge4" edge="1" parent="1" source="gerentes" target="app-web">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge5" edge="1" parent="1" source="app-movil" target="azure-functions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge6" edge="1" parent="1" source="app-web" target="azure-functions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge7" edge="1" parent="1" source="sharepoint" target="data-factory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge8" edge="1" parent="1" source="azure-functions" target="azure-sql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge9" edge="1" parent="1" source="azure-functions" target="azure-ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge10" edge="1" parent="1" source="azure-functions" target="azure-communication">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge11" edge="1" parent="1" source="encuestas" target="azure-functions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge12" edge="1" parent="1" source="ideas" target="azure-functions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge13" edge="1" parent="1" source="notificaciones" target="azure-functions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge14" edge="1" parent="1" source="data-factory" target="sincronizacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge15" edge="1" parent="1" source="sincronizacion" target="transformacion">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge16" edge="1" parent="1" source="transformacion" target="azure-sql">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge17" edge="1" parent="1" source="azure-ai" target="azure-monitor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edge18" edge="1" parent="1" source="azure-functions" target="azure-keyvault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- METADATA -->
+        <mxCell id="metadata" value="ARCH-FUNC-001 v1.0 | Labor Climate Evaluation System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="600" height="20" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

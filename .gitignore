@@ -1,0 +1,186 @@
+# ===========================================
+# DEPENDENCIAS
+# ===========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===========================================
+# BUILD Y PRODUCCIÓN
+# ===========================================
+dist/
+build/
+.next/
+out/
+.vite/
+coverage/
+*.tsbuildinfo
+
+# ===========================================
+# VARIABLES DE ENTORNO
+# ===========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+local.settings.json
+
+# ===========================================
+# AZURE FUNCTIONS
+# ===========================================
+.azure/
+func-debug.log
+local.settings.json
+
+# ===========================================
+# REACT NATIVE / MOBILE
+# ===========================================
+apps/mobile/android/
+apps/mobile/ios/
+apps/mobile/.expo/
+apps/mobile/.expo-shared/
+*.apk
+*.aab
+*.ipa
+
+# ===========================================
+# IDE Y EDITORES
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/shelf/
+
+# ===========================================
+# SISTEMA OPERATIVO
+# ===========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# LOGS Y CACHE
+# ===========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.eslintcache
+.cache/
+.parcel-cache
+
+# ===========================================
+# ARCHIVOS TEMPORALES
+# ===========================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ===========================================
+# DOCUMENTACIÓN Y DIAGRAMAS
+# ===========================================
+docs/build/
+docs/.docusaurus/
+*.drawio
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# ===========================================
+# PDFs (OPCIONAL - DESCOMENTAR SI QUIERES INCLUIRLOS)
+# ===========================================
+# *.pdf
+
+# ===========================================
+# TESTING
+# ===========================================
+coverage/
+.nyc_output/
+*.lcov
+
+# ===========================================
+# DEPLOYMENT
+# ===========================================
+.azure/
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# ===========================================
+# MONOREPO ESPECÍFICO
+# ===========================================
+# Excluir node_modules de cada app individual
+apps/*/node_modules/
+apps/*/dist/
+apps/*/build/
+
+# ===========================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ===========================================
+# Configuraciones locales
+config.local.json
+settings.local.json
+
+# Archivos de backup
+*.backup
+*.old
+*.orig
+
+# Archivos de lock duplicados
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===========================================
+# SEGURIDAD
+# ===========================================
+# Credenciales
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# ===========================================
+# MISCELÁNEO
+# ===========================================
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+*.7z

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-12-08T17:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="Container Diagram" id="container-diagram">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Sistema de Clima Laboral - Diagrama de Contenedores C4&#xa;Empresa de Retail de Alimentos" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- System: Clima Laboral App -->
+        <mxCell id="system" value="🏢 Sistema de Clima Laboral&#xa;Sistema de evaluación de clima laboral&#xa;para 9K empleados, 2 veces por mes&#xa;con notificaciones Email/SMS&#xa;Acceso web y móvil 24/7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="1200" height="1200" as="geometry" />
+        </mxCell>
+        
+        <!-- Frontend Containers -->
+        <mxCell id="web-app" value="🌐 Web Application&#xa;Container&#xa;&#xa;React + TypeScript&#xa;Azure Static Web Apps&#xa;&#xa;• Interfaz web para empleados&#xa;• Dashboard administrativo TH&#xa;• Formularios de encuestas&#xa;• Visualización de resultados&#xa;• Acceso 24/7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="150" y="150" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mobile-app" value="📱 Mobile Application&#xa;Container&#xa;&#xa;React Native + Expo&#xa;iOS + Android&#xa;&#xa;• Aplicación móvil empleados&#xa;• Encuestas offline-capable&#xa;• Notificaciones push&#xa;• Sincronización de datos&#xa;• Acceso 24/7" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="150" y="380" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Backend Containers -->
+        <mxCell id="api-gateway" value="🔌 API Gateway&#xa;Container&#xa;&#xa;Azure API Management&#xa;&#xa;• Enrutamiento de requests&#xa;• Rate limiting&#xa;• Autenticación/autorización&#xa;• Logging y monitoreo&#xa;• Versionado de APIs&#xa;• Auto-scaling automático" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="450" y="150" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="auth-container" value="🔐 Authentication&#xa;Container&#xa;&#xa;Azure AD (Entra ID)&#xa;&#xa;• Autenticación usuarios empleados&#xa;• Gestión identidades corporativas&#xa;• Single Sign-On (SSO)&#xa;• Multi-Factor Auth (MFA)&#xa;• Gestión roles/permisos&#xa;• Integración sistema corporativo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="survey-mgmt" value="📋 Survey Management&#xa;Container&#xa;&#xa;Azure Functions (.NET 8)&#xa;&#xa;• CRUD encuestas clima laboral&#xa;• Gestión preguntas configurables&#xa;• Programación evaluaciones mensuales&#xa;• Configuración notificaciones&#xa;• Procesamiento 9K empleados&#xa;• Auto-scaling serverless" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="700" y="150" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="survey-response" value="📝 Survey Response&#xa;Container&#xa;&#xa;Azure Functions (.NET 8)&#xa;&#xa;• Captura respuestas empleados&#xa;• Validación datos entrada&#xa;• Almacenamiento base datos&#xa;• Procesamiento asíncrono&#xa;• Volumen: 18K evaluaciones/mes&#xa;• Auto-scaling serverless" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="700" y="380" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notification" value="🔔 Notification&#xa;Container&#xa;&#xa;Azure Functions (.NET 8)&#xa;&#xa;• Emails masivos 9K empleados&#xa;• SMS recordatorios&#xa;• WhatsApp Business push&#xa;• Seguimiento entregas&#xa;• Retry automático fallos&#xa;• Volumen: 36K notificaciones/mes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="950" y="150" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ai-ml" value="🧠 AI/ML Processing&#xa;Container&#xa;&#xa;Azure Functions (.NET 8)&#xa;&#xa;• Análisis sentimiento (Azure AI)&#xa;• Detección patrones (Azure ML)&#xa;• Procesamiento datos IA&#xa;• Generación insights automáticos&#xa;• Integración Azure AI Services&#xa;• Auto-scaling serverless" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="950" y="380" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sentiment-scheduler" value="⏰ Sentiment Analysis&#xa;Scheduler Container&#xa;&#xa;Azure Functions (.NET 8)&#xa;Timer Trigger&#xa;&#xa;• Ejecución cada 6 horas&#xa;• Revisión respuestas pendientes&#xa;• Análisis sentimiento Azure AI&#xa;• Almacenamiento SQL&#xa;• Procesamiento asíncrono&#xa;• Auto-scaling serverless" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="950" y="610" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="reporting" value="📊 Reporting&#xa;Container&#xa;&#xa;Azure Functions (.NET 8)&#xa;&#xa;• Reportes participación&#xa;• Dashboards tiempo real TH&#xa;• Exportación múltiples formatos&#xa;• Análisis estadísticos&#xa;• Integración Power BI&#xa;• Auto-scaling serverless" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="700" y="840" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Storage Containers -->
+        <mxCell id="primary-db" value="🗄️ Primary Database&#xa;Container&#xa;&#xa;Azure SQL Database&#xa;&#xa;• 9K empleados&#xa;• Encuestas mensuales&#xa;• Respuestas y configuraciones&#xa;• Metadatos notificaciones&#xa;• Alta disponibilidad + backup&#xa;• Auto-scaling DTU vCore" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="150" y="840" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="file-storage" value="💾 File Storage&#xa;Container&#xa;&#xa;Azure Blob Storage&#xa;&#xa;• Archivos estáticos (CSS, JS)&#xa;• Documentos encuestas&#xa;• Reportes exportados&#xa;• Logs del sistema&#xa;• CDN optimización&#xa;• Escalabilidad ilimitada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="450" y="840" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="message-queue" value="📨 Message Queue&#xa;Container&#xa;&#xa;Azure Service Bus&#xa;&#xa;• Procesamiento asíncrono&#xa;• Cola notificaciones&#xa;• Cola análisis IA/ML&#xa;• Cola reportes automáticos&#xa;• Dead letter queue fallos&#xa;• Auto-scaling automático" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="700" y="610" width="200" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- External Services Integration Containers -->
+        <mxCell id="email-service" value="📧 Email Service&#xa;Integration Container&#xa;&#xa;SendGrid / Azure Comm&#xa;&#xa;• Emails transaccionales&#xa;• Emails masivos&#xa;• Plantillas personalizadas&#xa;• Seguimiento entregas&#xa;• Volumen: 18K emails/mes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1070" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="sms-service" value="📱 SMS Service&#xa;Integration Container&#xa;&#xa;Twilio / Azure Comm&#xa;&#xa;• SMS recordatorios&#xa;• Verificación números&#xa;• Seguimiento entregas&#xa;• Retry automático&#xa;• Volumen: 18K SMS/mes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1070" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="whatsapp" value="💬 WhatsApp&#xa;Integration Container&#xa;&#xa;WhatsApp Business API&#xa;&#xa;• Notificaciones push&#xa;• Mensajes automáticos&#xa;• Plantillas aprobadas&#xa;• Seguimiento estado&#xa;• Uso: Notificaciones opcionales" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1070" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ai-services" value="🤖 AI Services&#xa;Integration Container&#xa;&#xa;Azure AI Language&#xa;Azure Machine Learning&#xa;Azure OpenAI&#xa;&#xa;• Análisis sentimiento&#xa;• Detección patrones&#xa;• Chatbot consultas RRHH" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1070" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="power-bi" value="📈 Power BI&#xa;Integration Container&#xa;&#xa;Azure Data Factory&#xa;&#xa;• Dashboards ejecutivos&#xa;• Reportes automáticos&#xa;• Análisis tendencias&#xa;• Exportación datos&#xa;• Usuarios: TH y administradores" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1070" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships between Containers -->
+        <!-- Frontend to API Gateway -->
+        <mxCell id="rel1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="web-app" target="api-gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel2" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="mobile-app" target="api-gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- API Gateway to Backend Containers -->
+        <mxCell id="rel3" value="JWT Auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="auth-container">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel4" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="survey-mgmt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel5" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="survey-response">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel6" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="notification">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel7" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="ai-ml">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel8" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="api-gateway" target="reporting">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Backend Containers to Data Storage -->
+        <mxCell id="rel9" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="survey-mgmt" target="primary-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel10" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="survey-response" target="primary-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel11" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="notification" target="primary-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel12" value="SQL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="reporting" target="primary-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel13" value="Blob" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="reporting" target="file-storage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Message Queue Relationships -->
+        <mxCell id="rel14" value="Queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="survey-response" target="message-queue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel15" value="Queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="survey-mgmt" target="message-queue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel16" value="Queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="message-queue" target="ai-ml">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel17" value="Queue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="message-queue" target="notification">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- External Service Integrations -->
+        <mxCell id="rel18" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="notification" target="email-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel19" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="notification" target="sms-service">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel20" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="notification" target="whatsapp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel21" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="ai-ml" target="ai-services">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Sentiment Analysis Scheduler Relationships -->
+        <mxCell id="rel23" value="SQL Query" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="sentiment-scheduler" target="primary-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel24" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="sentiment-scheduler" target="ai-services">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel25" value="SQL Insert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="sentiment-scheduler" target="primary-db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel22" value="REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;fontSize=10;strokeWidth=2;" edge="1" parent="1" source="reporting" target="power-bi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Legend - Top Left -->
+        <mxCell id="legend" value="📋 Leyenda de Contenedores&#xa;&#xa;🌐 Frontend (React/React Native)&#xa;🔌 Backend (Azure Functions)&#xa;🗄️ Data Storage (Azure SQL/Blob)&#xa;📨 Message Queue (Service Bus)&#xa;🔗 External Services Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="250" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Flow Description - Top Right -->
+        <mxCell id="flow-desc" value="📊 Flujos Principales&#xa;&#xa;1. Frontend → API Gateway → Backend&#xa;2. Backend → Database/Storage&#xa;3. Async Processing → Message Queue&#xa;4. AI/ML → External AI Services&#xa;5. Reporting → Power BI Integration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="50" width="250" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Technologies Box - Bottom -->
+        <mxCell id="tech-box" value="🛠️ Stack Tecnológico Principal&#xa;&#xa;Frontend: React + React Native + Expo&#xa;Backend: Azure Functions (.NET 8)&#xa;Base de Datos: Azure SQL Database&#xa;Almacenamiento: Azure Blob Storage + CDN&#xa;Colas: Azure Service Bus&#xa;IA/ML: Azure AI Language + ML + OpenAI&#xa;Hosting: Azure Static Web Apps&#xa;Seguridad: Azure AD + Application Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1320" width="400" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- Metrics Box - Bottom Left -->
+        <mxCell id="metrics-box" value="📈 Métricas del Sistema&#xa;&#xa;👥 9,000 empleados&#xa;📋 18,000 evaluaciones/mes&#xa;📧 36,000 notificaciones/mes&#xa;⏰ Disponibilidad 24/7&#xa;📊 99.9%+ uptime&#xa;🔄 2 evaluaciones por mes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1320" width="200" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
