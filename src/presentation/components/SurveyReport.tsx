@@ -211,7 +211,7 @@ export const SurveyReport: React.FC<SurveyReportProps> = ({ survey, responses })
                 <Table>
                   <TableHead>
                     <TableRow>
-                      <TableCell>#</TableRow>
+                      <TableCell>#</TableCell>
                       <TableCell>Pregunta</TableCell>
                       <TableCell>Tipo</TableCell>
                       <TableCell>Respuestas</TableCell>
