@@ -22,21 +22,8 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: Debug - Show current directory
-        run: |
-          pwd
-          ls -la
-          echo "Node version: $(node --version)"
-          echo "NPM version: $(npm --version)"
-
       - name: Install dependencies
         run: npm install
-
-      - name: Debug - Show package.json
-        run: |
-          cat package.json
-          echo "--- Workspace packages ---"
-          npm run --workspaces --silent pkg
 
       - name: Build shared packages
         run: npm run build:shared
