@@ -5,6 +5,13 @@ metadata:
   description: Aplicación web completa para gestión de encuestas de clima laboral con IA
   annotations:
     github.com/project-slug: crlsquilumba/clima_laboral_app_cloud_architect
+    github.com/branch-count: "1"
+    github.com/has-gitflow: "false"
+    github.com/default-branch: "develop"
+  links:
+    - url: https://github.com/crlsquilumba/clima_laboral_app_cloud_architect/tree/develop
+      title: "✅ develop — producción"
+      icon: github
 spec:
   type: library
   lifecycle: experimental
